@@ -1,0 +1,24 @@
+.home-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .button-group {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #003184;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #0055aa;
+  }
+  

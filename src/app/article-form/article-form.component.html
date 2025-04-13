@@ -1,0 +1,78 @@
+<div class="flex justify-between items-center mb-4">
+  <h2 class="text-2xl font-bold">Gestion des articles</h2>
+</div>
+
+<div class="mb-4">
+  <form (ngSubmit)="onSubmit()" class="flex flex-wrap items-end gap-4">
+
+    <!-- Upload image -->
+    <div class="flex flex-col w-64">
+      <label for="imageUpload" class="mb-1">Image</label>
+      <input type="file" id="imageUpload" (change)="onFileSelected($event)" accept="image/*" class="p-2 border border-gray-300">
+      <div *ngIf="previewImage" class="mt-2">
+        <img [src]="previewImage" alt="Aperçu" class="h-20 rounded border border-gray-200">
+      </div>
+    </div>
+
+    <!-- Titre -->
+    <div class="flex flex-col w-48">
+      <label for="title" class="mb-1">Titre</label>
+      <input type="text" id="title" [(ngModel)]="newArticle.title" name="title" required
+             class="p-2 border border-gray-300" placeholder="Entrez le titre">
+    </div>
+
+    <!-- Description -->
+    <div class="flex flex-col w-64">
+      <label for="description" class="mb-1">Description</label>
+      <input type="text" id="description" [(ngModel)]="newArticle.description" name="description" required
+             class="p-2 border border-gray-300" placeholder="Entrez la description">
+    </div>
+
+    <!-- Date -->
+    <div class="flex flex-col w-44">
+      <label for="date" class="mb-1">Date</label>
+      <input type="date" id="date" [(ngModel)]="newArticle.date" name="date" required
+             class="p-2 border border-gray-300" placeholder="jj/mm/aaaa">
+    </div>
+
+    <!-- Bouton Ajouter -->
+    <div>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 h-10 mt-6 rounded cursor-pointer
+      hover:bg-blue-600 transition-colors duration-200 shadow hover:shadow-lg">>
+        Ajouter l'article
+      </button>
+    </div>
+
+  </form>
+</div>
+
+<!-- Tableau des articles -->
+<table class="table-auto w-full border-collapse border border-gray-300">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border p-2">Image</th>
+      <th class="border p-2">Titre</th>
+      <th class="border p-2">Description</th>
+      <th class="border p-2">Date</th>
+      <th class="border p-2">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articles">
+      <td class="border p-2">
+        <img *ngIf="article.image" [src]="article.image" alt="Image" class="h-12 w-auto rounded">
+      </td>      <td class="border p-2">{{ article.title }}</td>
+      <td class="border p-2">{{ article.description }}</td>
+      <td class="border p-2">{{ article.date }}</td>
+      <td class="border p-2 text-center">
+        <button (click)="deleteArticle(article)" class="text-black hover:text-red-600 text-lg rounded cursor-pointer" title="Supprimer">
+          🗑️
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button routerLink="/home" class="bg-blue-500 text-white px-4 py-2 h-10 mt-6 rounded cursor-pointer
+hover:bg-blue-600 transition-colors duration-200 shadow hover:shadow-lg">>
+  Retour à l'accueil</button>
