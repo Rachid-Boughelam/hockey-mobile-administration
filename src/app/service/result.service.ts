@@ -14,7 +14,8 @@ export interface Result {
   providedIn: 'root'
 })
 export class ArticleService {
-  private apiUrl = 'http://192.168.2.15:8080/api/jaguar-hockey/article';
+  //private apiUrl = 'http://localhost:8080/api/jaguar-hockey/article';
+  apiUrl = 'https://rachidboughelam-api.onrender.com/api/jaguar-hockey/result';
 
   constructor(private http: HttpClient) {}
 
