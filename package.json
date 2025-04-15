@@ -1,8 +1,7 @@
 {
   "name": "hockey-mobile-administration",
   "version": "0.0.0",
-  "scripts": {
-    "prebuild": "chmod +x node_modules/.bin/ng",
+"scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

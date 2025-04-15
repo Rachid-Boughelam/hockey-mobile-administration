@@ -8,6 +8,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </style><link rel="stylesheet" href="styles-AOVFPLQ6.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-AOVFPLQ6.css"></noscript></head>
 <body>
   <app-root ng-version="19.2.6" ng-server-context="ssg"><router-outlet></router-outlet><app-result-form><p>result-form works!</p></app-result-form><!----></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-GBWK6NAD.js" type="module"></script>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-YUAGI2QJ.js" type="module"></script>
 
 </body></html>`;

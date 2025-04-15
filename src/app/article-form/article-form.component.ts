@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ArticleService, Article } from '../service/article.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-article-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule, RouterLink, RouterModule],
   templateUrl: './article-form.component.html',
   styleUrls: ['./article-form.component.css']
 })
