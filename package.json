@@ -2,13 +2,13 @@
   "name": "hockey-mobile-administration",
   "version": "0.0.0",
   "scripts": {
-  "ng": "ng",
-  "start": "ng serve",
-  "build": "ng build",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test",
-  "serve:ssr:hockey-mobile-administration": "node dist/hockey-mobile-administration/server/server.mjs"
-},
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:hockey-mobile-administration": "node dist/hockey-mobile-administration/server/server.mjs"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "^19.2.0",
