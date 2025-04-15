@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>HockeyAdmin</title>
   <base href="/">
@@ -8,6 +8,6 @@
 </style><link rel="stylesheet" href="styles-HPC5DEEO.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-HPC5DEEO.css"></noscript><style ng-app-id="ng">.home-container[_ngcontent-ng-c753306625]{text-align:center;padding:40px}.button-group[_ngcontent-ng-c753306625]{margin-top:30px}.btn[_ngcontent-ng-c753306625]{margin:10px;padding:15px 30px;font-size:18px;cursor:pointer;background-color:#003184;color:#fff;border:none;border-radius:5px}.btn[_ngcontent-ng-c753306625]:hover{background-color:#05a}</style></head>
 <body>
   <app-root ng-version="19.2.6" ng-server-context="ssg"><router-outlet></router-outlet><app-home _nghost-ng-c753306625><div _ngcontent-ng-c753306625 class="home-container"><h1 _ngcontent-ng-c753306625 class="text-3xl font-semibold text-center text-gray-800 mt-8 mb-4">Bienvenue dans <span _ngcontent-ng-c753306625 class="text-blue-600">Hockey-admin</span></h1><div _ngcontent-ng-c753306625 class="button-group"><button _ngcontent-ng-c753306625 routerlink="/article" class="btn" tabindex="0">Gérer les articles</button><button _ngcontent-ng-c753306625 routerlink="/result" class="btn" tabindex="0">Gérer les résultats</button><button _ngcontent-ng-c753306625 routerlink="/team" class="btn" tabindex="0">Gérer l'équipe</button></div></div></app-home><!----></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-4X7DYTC3.js" type="module"></script>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-GANMK4BX.js" type="module"></script>
 
-</body></html>
+</body></html>`;

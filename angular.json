@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hockey-admin": {
+    "hockey-mobile-administration": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hockey-admin",
+            "outputPath": "dist/hockey-mobile-administration",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hockey-admin:build:production"
+              "buildTarget": "hockey-mobile-administration:build:production"
             },
             "development": {
-              "buildTarget": "hockey-admin:build:development"
+              "buildTarget": "hockey-mobile-administration:build:development"
             }
           },
           "defaultConfiguration": "development"
