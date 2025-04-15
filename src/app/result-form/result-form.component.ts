@@ -3,7 +3,7 @@ import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-result-form',
-  imports: [RouterLink, RouterModule],
+  imports: [RouterModule],
   templateUrl: './result-form.component.html',
   styleUrl: './result-form.component.css'
 })
